@@ -1,0 +1,248 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "IBM Plex Mono!";
+}
+
+@font-face {
+  font-family: "IBM Plex Mono!";
+  src: local("IBM Plex Mono");
+  src: url(../fonts/IBMPlexMono-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "IBM Plex Mono!";
+  src: local("IBM Plex Mono");
+  src: url(../fonts/IBMPlexMono-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+body {
+  background: #141414;
+}
+
+.container {
+  max-width: 1110px;
+  min-height: 80px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.high-section {
+  min-height: 80px;
+  background: #4520ab;
+  margin-bottom: 52px;
+}
+
+.high-section__img {
+  width: 140px;
+  height: 48px;
+  margin: 16.5px 200px 15.5px 0;
+}
+
+.nav-menu__list {
+  display: flex;
+}
+.nav-menu__item {
+  display: inline-block;
+  list-style-type: none;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.nav-menu__item-img {
+  width: 20px;
+  height: 20px;
+  margin-top: 28px;
+}
+.nav-menu__item-border {
+  margin-bottom: 30px;
+}
+.nav-menu__item:not(:last-child) {
+  margin: 28px 41px 0 0;
+}
+
+.nav-menu__item_1:hover,
+.nav-menu__item_2:hover,
+.nav-menu__item_3:hover,
+.nav-menu__item_4:hover {
+  color: #ffbc5b;
+  border-bottom: 2px solid #ffbc5b;
+  opacity: 1;
+}
+
+.high-section__profile-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  margin: 16.5px 200px 15.5px 92px;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  overflow: hidden;
+  transform: scale(0.8);
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.high-section__profile img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.title {
+  color: #ffbc5b;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-bottom: 36px;
+  margin-top: 52px;
+  position: relative;
+}
+
+.title-text {
+  width: 16px;
+  height: 2px;
+  display: block;
+  background: #ffbc5b;
+  cursor: pointer;
+  position: absolute;
+  transform-origin: bottom right;
+}
+.title-text__symbol_top {
+  transform: rotate(45deg);
+  right: 815px;
+  top: 21px;
+}
+
+.title-text__symbol_bottom {
+  transform: rotate(-45deg);
+  right: 815px;
+  top: 21px;
+}
+.title-text__symbol_top-1 {
+  transform: rotate(45deg);
+  right: 615px;
+  top: 295px;
+}
+.title-text__symbol_bottom-1 {
+  transform: rotate(-45deg);
+  right: 615px;
+  top: 295px;
+}
+.card-text {
+  position: relative;
+}
+
+.card-text__symbol {
+  width: 33px;
+  height: 2px;
+  display: block;
+  background: #ffbc5b;
+  cursor: pointer;
+  transform-origin: bottom right;
+}
+.card__symbol_top {
+  position: absolute;
+  transform: rotate(45deg);
+  left: 1030px;
+  top: 80px;
+}
+.card__symbol_bottom {
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1030px;
+  top: 80px;
+}
+.card-text-1 {
+  position: relative;
+}
+.card__symbol_top-1 {
+  position: absolute;
+  transform: rotate(45deg);
+  left: 1030px;
+  top: 270px;
+}
+.card__symbol_bottom-1 {
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1030px;
+  top: 270px;
+}
+
+.text {
+  color: #989898;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.16px;
+}
+
+.text-1 {
+  color: #515151;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+}
+.card {
+  position: relative;
+}
+
+.card__img {
+  width: 322px;
+  height: 182px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.card__mark {
+  background: #ffbc5b;
+  width: 40px;
+  height: 25px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  left: 14px;
+}
+.card-big {
+  position: relative;
+}
+
+.card-big__mark {
+  width: 40px;
+  height: 25px;
+  background: #ffbc5b;
+  padding: 2px 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  left: 14px;
+}
+.card-big__img {
+  width: 322px;
+  height: 485px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.card__img-movie {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: all 0.4s;
+}
+.card-big__img-movie {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
